@@ -1,0 +1,92 @@
+<!--We create a Job-Portal website project Using HTML and CSS-->
+
+<!--When Do not provide  any designing rule in css in that case browser default 
+formatting is applying.
+If You want to suppres or reset the browser format in that case use Universla Selector. 
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job-Portal Website</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="apply_box">
+            <h1>
+                Job Application
+                <span class="title_small">(Web)</span>
+            </h1>
+            <form action="#">
+                <div class="form_container">
+                    <div class="form_control">
+                        <labe for="first name">First Name</labe>
+                        <input id="first_name" type="text" 
+                               name="txtfirstname" 
+                               placeholder="Enter First Name"/>                  
+                     </div>
+                     <div class="form_control">
+                        <labe for="last name">Last Name</labe>
+                        <input id="last_name" type="text" 
+                               name="txtlastname"
+                               placeholder="Enter Last Name"/>                      
+                    </div>
+                    <div class="form_control">
+                        <labe for="email">Email</labe>
+                        <input id="email" type="email" 
+                               name="txtEmail"
+                               placeholder="Enter Email"/>                      
+                    </div>
+                    <div class="form_control">
+                        <labe for="job_role">Job Role</labe>
+                        <select id="job_role" type="job_role" 
+                               name="job_role">
+                               <option value="">Select Job Role</option>
+                               <option value="frontend">Frontend Developer</option>
+                               <option value="backend">Backend Developer</option>
+                               <option value="full_stack">Full Stack Developer</option>
+                               <option value="python">Python Developer</option>
+                               <option value="java">Java Developer</option>
+                               <option value="software">software Developer</option>
+                               <option value="web">Web Developer</option>
+                              // <option value="ui_ux">Ui UC Designer</option>
+                        </select>                
+                    </div>
+                    <div class="textarea_control"> 
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" 
+                        rows="2" cols="50" placeholder="Enter Address"></textarea>
+                    </div>
+                    <div class="form_control">
+                        <label for="city">City</label>
+                        <input id="city" name="city" 
+                                placeholder="Enter City Name"/>
+                    </div>
+                    <div class="form_control">
+                        <label for="pincode">PinCode</label>
+                        <input id="pincode" name="pincode"
+                               placeholder="Enter Your Pin"/>
+                    </div>
+                    <div class="form_control">
+                        <label for="date">Date-of-worth</label>
+                        <input id="date" name="date" 
+                               value="06/11/2023" type="date"/>
+                    </div>
+                    <div class="form_control">
+                        <label for="upload">Upload Your CV</label>
+                        <input id="upload" name="upload" type="file"/>
+                    </div>
+
+                    <div class="button_container">
+                    <button type="submit">Apply</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
